@@ -1,0 +1,29 @@
+  <section class="page-header">
+    <div class="container">
+      <h1>Book an Appointment</h1>
+      <div class="page-header__crumbs"><a href="/">Home</a> &rsaquo; <span>Book an Appointment</span></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container" style="max-width:760px;">
+      <div class="form-card">
+        <div class="form-success">Thanks! Your appointment request is ready to send &mdash; please confirm in your email app.</div>
+        <form data-lead-form>
+          <div class="form-row">
+            <div class="form-field"><label for="aName">Name</label><input id="aName" name="name" type="text" required></div>
+            <div class="form-field"><label for="aEmail">Email Address</label><input id="aEmail" name="email" type="email" required></div>
+          </div>
+          <div class="form-row">
+            <div class="form-field"><label for="aPhone">Phone Number</label><input id="aPhone" name="phone" type="tel" required></div>
+            <div class="form-field"><label for="aDate">Preferred Date</label><input id="aDate" name="date" type="date" required></div>
+          </div>
+          <div class="form-row form-row--full">
+            <div class="form-field"><label for="aMessage">Message</label><textarea id="aMessage" name="message" rows="5" placeholder="Tell us which department or doctor you'd like to see"></textarea></div>
+          </div>
+          <button type="submit" class="btn btn--primary btn--block">Submit</button>
+          <p class="form-note">This form opens your email app with the request pre-filled. To receive submissions directly, connect a form backend (see README).</p>
+        </form>
+      </div>
+    </div>
+  </section>
