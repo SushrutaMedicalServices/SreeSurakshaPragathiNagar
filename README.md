@@ -52,7 +52,17 @@ For production, connect a real form backend — options that work well with a st
 - `CLOUDFLARE_API_TOKEN`
 - `CLOUDFLARE_ACCOUNT_ID`
 
-...and a Cloudflare Pages project named `sree-suraksha-pragathi-nagar` (or update `--project-name` in the workflow to match whatever you create). Until those secrets exist, the workflow will simply fail — it won't break anything else.
+...and a Cloudflare Pages project named `sree-suraksha-pragathi-nagar` (or update `--project-name` in the workflow to match whatever you create). Until those secrets exist, the deploy step skips itself with a warning instead of failing (see `.github/workflows/deploy.yml`).
+
+### One-time setup
+
+1. **Create the Pages project** — Cloudflare dashboard → Workers & Pages → Create → Pages → Connect to Git isn't required; you can create an empty project named `sree-suraksha-pragathi-nagar` and let this workflow push to it via `wrangler pages deploy`, or connect it directly to this GitHub repo instead (in which case you don't need this workflow at all — disable/delete `.github/workflows/deploy.yml` and let Cloudflare's own GitHub integration build on push).
+2. **Create an API token** — Cloudflare dashboard → My Profile → API Tokens → Create Token → use the "Edit Cloudflare Workers" template (or a custom token with `Account.Cloudflare Pages: Edit` permission).
+3. **Find your Account ID** — shown on the right sidebar of any Cloudflare dashboard page for your account.
+4. **Add both as GitHub repo secrets** — this repo's Settings → Secrets and variables → Actions → New repository secret:
+   - `CLOUDFLARE_API_TOKEN`
+   - `CLOUDFLARE_ACCOUNT_ID`
+5. Push to `main` (or re-run the workflow from the Actions tab) — it will now deploy.
 
 ## Content source & images
 
