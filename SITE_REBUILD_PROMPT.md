@@ -26,7 +26,7 @@ Email:     info@sushrutamedicalservices.com
 Address:   6-1540/DNP/G1. Beside Reliance Trends, Near Allur Seetharamaraju
            Statue, Pragathi Nagar, Hyderabad-500090.
 Socials:   Facebook, X/Twitter, Instagram, LinkedIn, YouTube (see footer)
-Copyright: © 2024 Suraksha Multispeciality Hospital. All Rights Reserved.
+Copyright: © 2026 Suraksha Multispeciality Hospital. All Rights Reserved.
 ```
 
 ---

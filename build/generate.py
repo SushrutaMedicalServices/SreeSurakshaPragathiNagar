@@ -493,7 +493,7 @@ def render_footer():
       </div>
     </div>
     <div class="footer__bottom">
-      <p>&copy; {2024} {SITE['name']}. All Rights Reserved.</p>
+      <p>&copy; {2026} {SITE['name']}. All Rights Reserved.</p>
     </div>
   </div>
 </footer>
